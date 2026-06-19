@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>电影搜索-免费欧美电影-高清影视片库</title>
+  <meta name="description" content="搜索免费欧美电影、高清影视片库、影片类型、地区和标签。">
+  <meta name="keywords" content="电影搜索,免费欧美电影,欧美电影,高清影视片库,高清免费,热门电影,精选影片,电影分类">
+  <link rel="stylesheet" href="./assets/base.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="欧美电影库">
+      <span class="brand-mark">🎬</span>
+      <span class="brand-text">
+        <strong>欧美电影库</strong>
+        <small>Premium Movie Library</small>
+      </span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link " href="./index.html">首页</a>
+      <a class="nav-link " href="./categories.html">分类</a>
+      <a class="nav-link " href="./rank.html">排行榜</a>
+      <a class="nav-link is-active" href="./search.html">搜索</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索电影、类型、地区" aria-label="搜索电影">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="mobile-toggle" type="button" aria-label="展开导航" data-menu-toggle>☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-menu>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索电影">
+      <button type="submit">搜索</button>
+    </form>
+    <a href="./index.html">首页</a>
+    <a href="./categories.html">分类</a>
+    <a href="./rank.html">排行榜</a>
+    <a href="./search.html">搜索</a>
+  </div>
+</header>
+<main>
+<section class="page-hero search-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow">Search</span>
+    <h1>搜索电影</h1>
+    <form class="big-search" action="./search.html" method="get" data-search-form>
+      <input type="search" name="q" placeholder="输入电影名、类型、地区或标签" aria-label="搜索电影" data-search-input>
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</section>
+<section class="content-section">
+  <div class="search-status" data-search-status>输入关键词即可查找影片。</div>
+  <div class="movie-grid" data-search-results></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo"><span>🎬</span><strong>欧美电影库</strong></div>
+      <p>精选欧美及多地区高清电影内容，覆盖剧情、动作、爱情、悬疑、科幻等多种题材，提供清晰的分类浏览与片单推荐。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <ul>
+        <li><a href="./index.html">首页</a></li>
+        <li><a href="./categories.html">全部分类</a></li>
+        <li><a href="./rank.html">热门排行</a></li>
+        <li><a href="./search.html">影片搜索</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>影片分类</h2>
+      <ul>
+        <li><a href="./category-drama.html">剧情电影</a></li>
+        <li><a href="./category-action.html">动作电影</a></li>
+        <li><a href="./category-comedy.html">喜剧电影</a></li>
+        <li><a href="./category-romance.html">爱情电影</a></li>
+        <li><a href="./category-suspense.html">悬疑电影</a></li>
+        <li><a href="./category-horror.html">恐怖电影</a></li>
+        <li><a href="./category-sci-fi.html">科幻电影</a></li>
+        <li><a href="./category-fantasy.html">奇幻电影</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 欧美电影库. All rights reserved.</p>
+    <p>高清免费在线观看 · 精选影片 · 电影分类</p>
+  </div>
+</footer>
+<script src="./assets/app.js"></script>
+<script src="./assets/movie-index.js"></script>
+<script>
+initSearchPage();
+</script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
